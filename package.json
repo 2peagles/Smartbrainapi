@@ -2,14 +2,13 @@
   "name": "smartbrain",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "script": {
     "start": "nodemon server.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",

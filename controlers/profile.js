@@ -1,4 +1,4 @@
-const handleprofileGet = ('./profile/:id', (req, res) => {
+const handleProfileGet = ('./profile/:id', (req, res) => {
     const { id } = req.params;
   db.select( ' * ' ).from ( 'users' ).where({id})
     .then(user=>{
@@ -10,4 +10,7 @@ const handleprofileGet = ('./profile/:id', (req, res) => {
   })
   .catch (err => res.status(400).json('error getting profile'))
  })
- export default handleprofileGet ;
+module.exports = {
+  handleProfileGet
+};
+
